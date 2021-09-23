@@ -34,9 +34,5 @@ def shoppingCart():
             user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ")  
 
 shoppingCart()
+print("Thank you for shopping with us!")
 
-
-
-
-
-# Ask the user 5 bits of input: Do you want to : Show/Add/Delete/clear or Quit?
