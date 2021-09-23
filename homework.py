@@ -11,7 +11,7 @@ def deleteCart(cart, delete):
 
 def shoppingCart():
     myShoppingCart = []
-    user_input = ''
+    user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ")
 
     while user_input.lower().strip() != 'quit':
         if user_input.lower().strip() == 'show':
@@ -30,6 +30,7 @@ def shoppingCart():
             myShoppingCart = []
             user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ") 
         else:
+            print("Huh?")
             user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ")  
 
 shoppingCart()
