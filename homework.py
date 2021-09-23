@@ -23,7 +23,10 @@ def shoppingCart():
             user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ")    
         elif user_input.lower().strip() == 'delete':
             remove_item = input("What would you like to remove? ")
-            deleteCart(myShoppingCart, remove_item) 
+            if remove_item in myShoppingCart:
+                deleteCart(myShoppingCart, remove_item) 
+            else:
+                print("Item not in cart")    
             user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ")  
         elif user_input.lower().strip() == 'clear':
             print("Your cart is now empty!")
@@ -33,6 +36,7 @@ def shoppingCart():
             print("Huh?")
             user_input = input("Do you want to Show, Add, Delete, Clear or Quit?: ")  
 
-shoppingCart()
-print("Thank you for shopping with us!")
 
+shoppingCart()
+
+print("Thank you for shopping with us!")
